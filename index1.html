@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+  <title>Formulario</title>
+  <style>
+    .box {
+        width: 250px;
+        height: 250px;
+        float:left;
+        margin: 20px;
+
+    }
+    .dashed{
+        border: 3px dashed black;
+        padding: 3px;
+        text-align: center;
+    }
+    span{
+        color: red;
+    }
+  </style>
+</head>
+<body>
+    <!-- 
+    1. Formulario con los campos
+    2. Boton enviar submit
+    3. Mostrar datos por pantalla
+    4. Validacion
+    -->
+  <h1>Formulario:  EJERCICIO 2 EVENTOS, DOM Y EVENTOS</h1>
+<div class="box">
+  <form action="" method="POST" id="formulario" onsubmit= "return false";>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"><br>
+    <span id="error_nombre"></span><br><br>
+
+    <label for="apellidos">Apellidos:</label><br>
+    <input type="text" id="apellidos" name="apellidos"><br>
+    <span id="error_apellidos"></span><br><br>
+
+    <label for="edad">Edad:</label><br>
+    <input type="number" id="edad" name="edad"><br>
+    <span id="error_edad"></span><br><br>
+
+    <input type="submit" value="Enviar" id="submit">
+  </form>
+</div>
+<div class="box dashed">
+    <h3>Información del usuario</h3>
+    <hr>
+    <p id= "p_nombre">
+        Nombre: <span></span>
+    </p>
+    <p id= "p_apellidos">
+        Apellidos: <span></span>
+    </p>
+    <p id= "p_edad">
+       Edad: <span></span>
+    </p>
+
+</div>
+
+  <script src="ejercicioForm.js"></script>
+</body>
+</html>
