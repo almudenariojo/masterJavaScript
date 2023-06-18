@@ -19,6 +19,10 @@ getUsuarios()
   .then(data => data.json()) // Convertir la respuesta en formato JSON
   .then(user => {
     mostrarJanet(user.data); // Mostrar el usuario "Janet" en el elemento con el id "janet"
+  })
+  .catch(error => {
+    alert("Error en las peticiones");
+    console.log(error + " Fallo"); // Manejar el error en caso de que ocurra
   });
 
 
