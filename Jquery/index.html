@@ -7,12 +7,42 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/selectores.js"></script>
+    <style>
+        .zebra{
+            border: 5px dashed blue;
+        }
+        .grande{
+            font-size: 30px;
+        }
+        .margenSuperior{
+            display: block;
+            margin-top: 20px;
+        }
+        .resaltado{
+            border-bottom: 2px solid brown;
+        }
+    </style>
 </head>
 <body>
     <h1>Aprendiendo jQuery: Almudena Riojo</h1>
+<ul>
+    <li><a href="https://google.com" title="Google">Ir a Google</a></li>
+    <li><a href="https://facebook.com" title="Facebook">Ir a Facebook</a></li>
+    <li><a href="https://yahoo.com" title="Yahoo">Ir a Yahoo</a></li>
+    <li><a href="https://twitter.com" title="Twitter">Ir a Twitter</a></li>
+</ul>
     <p id ="rojo" class ="sinBorde">Ejercicios de jQuery</p>
     <p id ="amarillo" class ="zebra">Practicando con selectores</p>
     <p id ="verde" class ="sinBorde">Almudena Riojo Gómez</p>
     <p class ="zebra">Técnico Superior de DAW</p>
+
+    <div id="caja">
+        <p>Hola soy una caja</p>
+        <ul>
+            <li id="elemento1">Elemento 1</li>
+            <li class="resaltado">Elemento 2</li>
+        </ul>
+        <span class="resaltado">Soy un span</span>
+    </div>
 </body>
 </html>
