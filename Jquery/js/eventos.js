@@ -76,7 +76,4 @@ $(document).mousemove(function(event){
     $('body').css("cursor", "none");
 });
 
-
-
-
 });
